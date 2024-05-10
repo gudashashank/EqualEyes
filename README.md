@@ -77,18 +77,17 @@ The COCO 2017 Dataset has around 118k images in train set and 40k in the test se
 #### **Files**
  
 - Images
- 1. train 2017 
- 2. test 2017
- 3. val 2017
+  - train 2017 
+  - test 2017
+  - val 2017
 
-- Meta Data on Images
-  Under the Annotations folder:
-1. Captions_train2017
-2. Captions_val2017
-3. Instances_train2017
-4. Instances_val2017
-5. Person_keypoints_train2017
-6. Person_keypoints_val2017
+- Meta Data on Images Under the Annotations folder:
+  - Captions_train2017
+  - Captions_val2017
+  - Instances_train2017
+  - Instances_val2017
+  - Person_keypoints_train2017
+  - Person_keypoints_val2017
 
 #### **Explaining Key Notes**
 
@@ -256,7 +255,7 @@ The three pre-trained models are:
 
 ViTs are deep learning models that process sequential input data and reduce training times. Using the pre-trained models VisionEncoderDecoderModel, GPT2TokenizerFast, and ViTImageProcessor, provided an easy way of building without building from scratch. They also have the ability to outperform supervised pre-training and are suitable for image captioning.
 
-### **Model 4: BLIP**
+#### **Model 4: BLIP**
 
 The Fourth Model that we used here is BLIP: Bootstrapping Language-Image Pre-training for image captioning, from model and processor initialization to caption generation for input images.
 
@@ -312,7 +311,8 @@ This is multimodal mixture of encoder-decoder (MED), a multi-task model which ca
 
 The running web application is built on BLIP: Bootstrapping Language Image Pre-training for image captioning, it gave high accuracy and lesser loss compared to the other three models, moreover it has a filter to remove noise from website data making it a better fit for the application.
 
-Attaching a sample Image below from the application: 
+Attaching a sample Image below from the application: <br>
+
 ![Alt Text](Images/Results_Section.jpg)
 
 
@@ -333,15 +333,12 @@ Here the model 1 had a training time of ~14 hours, with additional parameter opt
 
 Further we have utilized a pre-trained model Vision Encoder Decoder model, here we used the Vision architecture to find the relationship between the images and GPT2 decoder to write the caption. It has  reduced the training time to 8 hours and we were able to increase the epochs size, model is already trained on image net data, we fine tuned it to fit the coco-data file and annotation set. The loss drastically reduced to 0.378. We did a fourth model further using BLIP, which further reduced the loss to 0.0062.
 
-
-
 We are quite satisfied with where we are in the results at the moment, we are still fine tuning things to make it work better as we want to capture every instance an image can display. We are stuck with the computational resources which has been explained detailed in the Limitation section below. There are 80 sub categories of the vast data set but its not very much enough to cover everything in the world.
 
-The task is GPU bound, but everything we have done so far is using a high computational CPU with 48 cores, so there was a time constraint and idling out issue which restricted in finding more bbox(Boundary Boxes for Object Segmentation) which has been displayed in the image below.
-
-![Alt Text](Images/cpu_idling.jpg)
+The task is GPU bound, but everything we have done so far is using a high computational CPU with 48 cores, so there was a time constraint and idling out issue which restricted in finding more bbox(Boundary Boxes for Object Segmentation)
 
 Explanation: Here our model works best with objects we trained it on, for example few animals, fruits, food categories..etc, here the below image has a caption quoting it as a clock tower instead of captioning it as a Eiffel tower, we trained a model how to identify an object as a clock/clock tower as its one of the object instance in coco2017 dataset. We wanted to use more object and stuff categories, but even here due to disk limitation and CPU idling out we had to train on less than half of the data.
+
 ![Alt Text](Images/EiffelTower_ClockTower.jpg)
 
 
@@ -351,7 +348,8 @@ Our main primary stakeholders are the people with Visual Impairments, the web-ap
 
 People who reach a malignant stage of diabetic retinopathy lose more than half their sight and cannot distinguish objects properly. With this application, they don't need an additional person to visualize something.
 
-Our second stakeholders are the social media users, we have tested it with random images from the search engines, its able to caption those images, people can utilize these to explain an image they are posting in a generic way, for example, flower garden in middle of a city park, its one of the caption our web application generated when we tested out. It makes browsing engaging, with more classified training we could even utilize it to identify plant species to very specific bird names.
+Our second stakeholders are the social media users, we have tested it with random images from the search engines, its able to caption those images, people can utilize these to explain an image they are posting in a generic way, for example, flower garden in middle of a city park, its one of the caption our web application generated when we tested out. It makes browsing engaging, with more classified training we could even utilize it to identify plant species to very specific bird names. 
+
 ![Alt Text](Images/Garden.jpg)
 
 

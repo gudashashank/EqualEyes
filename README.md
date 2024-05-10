@@ -313,7 +313,7 @@ The running web application is built on BLIP: Bootstrapping Language Image Pre-t
 
 Attaching a sample Image below from the application: <br>
 
-![Alt Text](Images/Results_Section.jpg)
+![Alt Text](Images/Slide5.JPG)
 
 
 ### **BLEU Score**

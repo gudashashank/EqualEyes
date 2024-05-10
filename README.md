@@ -100,7 +100,7 @@ The segmentation, bbox, category_id, person_category_id, super_category which ex
 
 ## Data 2: ImageNet
 
-ImageNet is a large image dataset specifically designed for visual object recognition research. Here's a summary of its key aspects relevant to your project:
+ImageNet ([source](https://www.image-net.org/download.php)) is a large image dataset specifically designed for visual object recognition research. Here's a summary of its key aspects relevant to your project:
 
 #### **Validation of Dataset Credibility**
 
@@ -196,7 +196,7 @@ Our modeling architecture consists of two main components: an image encoder and 
     - Displays the selected image for visual inspection of caption quality.
     - Generates captions token by token using a softmax layer at the output.
 
-#### **Model 2: InceptionV3**
+**InceptionV3**
 
 **Pre-trained on ImageNet:**
 InceptionV3 is pre-trained on the ImageNet dataset, which contains millions of labeled images across thousands of categories. Pre-training on ImageNet allows the model to learn general features from images, such as edges, textures, and object shapes.
@@ -217,7 +217,7 @@ InceptionV3 is a convolutional neural network (CNN) architecture developed by Go
 
 6. **Output Layer:** The final layers of the model are responsible for producing the model's output.
 
-#### **Model 3: CNN-RNN with Hyper-parameter tuning model**
+#### **Model 2: CNN-RNN with Hyper-parameter tuning model**
 
 Modifications were implemented in the CNN encoder, including adjustments to the maximum sequence length and the addition of a learning rate parameter (learning_rate=0.0001) in the Adam optimizer.
 
@@ -240,7 +240,7 @@ Modifications were implemented in the CNN encoder, including adjustments to the 
 Additional Changes:
 - **Learning Rate in Adam Optimizer:** A learning rate of 0.0001 has been added to the Adam optimizer, which controls the step size at each iteration while moving toward a minimum of the loss function during training.
 
-#### **Model 4: VisionEncoderDecoderModel, GPT2TokenizerFast, ViTImageProcessor**
+#### **Model 3: Vision Transformer: ViT-GPT2**
 
 The Third Model that we used here is a vision transformer-based architecture combined with GPT-2 for image captioning. It takes an image as input, processes it through a vision encoder, and generates a descriptive caption using a decoder based on GPT-2 architecture.
 
@@ -256,7 +256,7 @@ The three pre-trained models are:
 
 ViTs are deep learning models that process sequential input data and reduce training times. Using the pre-trained models VisionEncoderDecoderModel, GPT2TokenizerFast, and ViTImageProcessor, provided an easy way of building without building from scratch. They also have the ability to outperform supervised pre-training and are suitable for image captioning.
 
-### **Model 5: BLIP**
+### **Model 4: BLIP**
 
 The Fourth Model that we used here is BLIP: Bootstrapping Language-Image Pre-training for image captioning, from model and processor initialization to caption generation for input images.
 
@@ -375,12 +375,3 @@ For the primary stakeholder of visually impaired people, we wanted to make somet
 We collected a lot of object instances which describes more generic objects for higher educational stakeholder but we only trained on COCO 80 object categories as of now. 
 
 Given a GPU which reduces training time, we could have experimented integrating multi-model approach more and could have increased vocabulary size to have more descriptive explanation of what is happening in the image.
-
-
-
-## **Future Works**
-We are still trying to work on the GPU issue, and we also raised a ticket with Microsoft regarding this. They have suggested a few ways  and we are working on them to get the GPU detected as a physical device.
-
-Our other future scope is to include more advanced vocabulary training as well as to incorporate at least 300 object categories. We want to increase the scope for stakeholders, and for our current users, we want to add more languages such as Italian, Spanish, and Dutch. Just translating English to the desired language through APIs wasn't perfect, so caption training with regional language annotation files is the next short-term goal.
-
-For the long term, given the resources, we wanted to publish this as an application with different screens and different models trained to address stakeholders. For instance, a page for botanists which has a BLIP or Vision Model (as they are high performing ones) with a wide diverse dataset of plant species. This could describe what species are present in an image or what it is similar to. It would be highly helpful for students in graduate schools to have an interactive learning experience.

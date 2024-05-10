@@ -1,6 +1,6 @@
 # **EqualEyes: Image Caption Generator**
 
-![Alt Text](Images/Slide1.jpg)
+![Alt Text](Images/Slide1.JPG)
 
 ## **Team**
 - Shashank Guda (POC)
@@ -39,7 +39,7 @@ The working web application takes an image in any format as an input, processes 
 - Professionals involved in educating their peers, including those who train other teachers in the effective use of technology in the classroom. 
 - It creates an engaging learning experience, supports early literacy with younger children where it makes learning fun, it also improves the language learning, it can provide additional vocabulary to the peers,highly useful in bilingual or multilingual classroom environments.
 
-![Alt Text](Images/Slide2.jpg)
+![Alt Text](Images/Slide2.JPG)
 
 ## **Literature Review**
 
@@ -59,7 +59,7 @@ The discussion around improving inclusiveness, mitigating bias, and ensuring equ
 
 ## **Data**
 
-![Alt Text](Images/Slide3.jpg)
+![Alt Text](Images/Slide3.JPG)
 
 ### **Data 1**
 For this project, We have utilized the 2017 data from the COCO dataset ([source](https://cocodataset.org/#download)). The COCO dataset is a widely used benchmark for image captioning tasks due to its large scale and diversity.
@@ -114,7 +114,7 @@ ImageNet is a very widely known dataset in computer vision research, acknowledge
 
 ## **Methods**
 
-![Alt Text](Images/Slide4.jpg)
+![Alt Text](Images/Slide4.JPG)
 
 ### **Preprocessing**
 

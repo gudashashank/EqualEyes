@@ -49,7 +49,7 @@ The previous works so far were generic approaches in captioning an image, ours f
 
 The discussion around improving inclusiveness, mitigating bias, and ensuring equitable performance of image captioning systems across different demographics relates most directly to Section 1.4 of the ACM Code of Ethics and Professional Responsibilities. Specifically:
 
-***“Be fair and take action not to discriminate.” ***
+***“Be fair and take action not to discriminate.”***
 
 
 ## **Data & Methods**
@@ -91,17 +91,7 @@ There are 1.5 million Object Instances, 12 super categories and 80 sub categorie
 
 The Caption JSON file has the image id with the Caption  annotation which has been merged as a dataframe for each image to train the model, further few variables from the Instances and the Person Key points has been fetched to train using Object segmentation and stuff segmentation. 
 
-
 The segmentation, bbox, category_id, person_category_id, super_category which explains the location of each object, stuff category,person category. 
-
-
-![Alt Text](Images/Object_Instances.jpg)
-
-![Alt Text](Images/Object_Super_Sub_Category.jpg)
-
-![Alt Text](Images/Super_Sub_ID.jpg)
-
-![Alt Text](Images/Person_Keypoints_Human_Categories.jpg)
 
 ## Data 2: ImageNet
 

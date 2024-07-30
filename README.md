@@ -358,7 +358,7 @@ Our third stakeholders are the teachers and educators, this could be next LCMS(L
 For further improvement, we even trained our models with an extensive vocabulary from five different captions.
 
 <div align="center">
-    <a href="https://https://youtu.be/uzuu0xGXLNU?si=24BcYGMWas1nhxXH" target="_blank">
+    <a href="https://youtu.be/uzuu0xGXLNU?si=24BcYGMWas1nhxXH" target="_blank">
         <img src="https://img.shields.io/badge/Watch%20Video-Click%20Here-red?style=for-the-badge" alt="Watch Video">
     </a>
 </div>

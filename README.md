@@ -363,6 +363,13 @@ For further improvement, we even trained our models with an extensive vocabulary
     </a>
 </div>
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=V4ZqhJpc4mQ&t=120s">
+    <img src="https://img.shields.io/badge/EqualEyes-Project_Explanation-blue?style=for-the-badge" />
+  </a>
+</p>
+
+
 ## **Limitations**
 
 Our main Limitation was the computational resource allocation, it happened at the last moment, it took some learning curve to set it up all together and to get 40GB of image data in, our models are GPU bound, but the GPU was not initialized with the tensorflow version.
